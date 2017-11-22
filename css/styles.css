@@ -145,7 +145,11 @@ body {
 
 
 .phone-icon p {
-	width: 208px;
+	width: 258px;
+}
+
+.viber-block a {
+	color: #fff;
 }
 
 .main-title {
