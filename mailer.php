@@ -34,7 +34,7 @@ if (isset($_POST['mailType']) && !empty($_POST['mailType'])) {
         $mailSubject = 'Заявка на товар';
     }
 
-    $host = $_SERVER['SERVER_NAME'];
+    $host = $_SERVER['HTTP_HOST'];
     $variables['host'] = $host;
     foreach ($variables as $key => $val) {
         $emailContent = str_replace('$' . $key, $val, $emailContent);
