@@ -6,11 +6,11 @@ if (isset($_POST['mailType']) && !empty($_POST['mailType'])) {
 
     if ($mailType == 'contactManager') {
         $name = $_POST['name'];
-        $email = $_POST['email'];
+        $phone = $_POST['phone'];
         $text = $_POST['text'];
 
         $emailContent = file_get_contents('./emails/contactManager.htm');
-        $variables = ['name' => $name, 'email' => $email, 'text' => $text];
+        $variables = ['name' => $name, 'phone' => $phone, 'text' => $text];
         $mailSubject = 'Заявка на вопрос менеджеру';
     } else {
 

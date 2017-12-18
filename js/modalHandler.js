@@ -61,7 +61,7 @@ $(function(){
             type: 'POST',
             data: {
                 name: $(form).find('.contactName').val(),
-                email: $(form).find('.contactEmail').val(),
+                phone: $(form).find('.contactPhone').val(),
                 text: $(form).find('.contactText').val(),
 
                 mailType: 'contactManager'
