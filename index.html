@@ -30,70 +30,67 @@
 	
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/slide.js"></script>
+	<script type="text/javascript" src="js/modalHandler.js"></script>
 	<script type="text/javascript" src="js/lightbox.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				'css3': true,
-				'autoScrolling': false,
-				'fitToSection': false,
-				'navigation': false,
-				'navigationPosition': 'left',
-				'afterLoad': function(anchorLink, index){
-					if(index == 2){
-						$('#baby-chair').addClass('active');
-					}
-					if(index != 2){
-						$('#baby-chair').removeClass('active');
-					}
-					if(index == 3){
-						$('#armchair').addClass('active');
-					}
-					if(index != 3){
-						$('#armchair').removeClass('active');
-					}
-					if(index == 4){
-						$('#img-s-s-id').addClass('active');
-					}
-					if(index == 4){
-						$('#img-s-s-id').addClass('fadeInLeft');
-					}
-					if(index == 4){
-						$('.s-3-img').addClass('shake');
-					}
-					if(index == 5){
-						$('.info-r-w-block').addClass('flipInY');
-					}
-					if(index != 4){
-						$('#img-s-s-id').removeClass('active');
-					}
-					if(index == 7){
-						$('.img-s-z').addClass('fadeInUp');
-					}
-					if(index == 7){
-						$('.one-head, .two-head, .three-head').addClass('flipInY');
-					}
-					if(index == 6){
-						$('#move-down-head').addClass('active');
-					}
-					if(index == 6){
-						$('.s-size, .m-size, .l-size').addClass('flipInY');
-					}
-					if(index != 6){
-						$('#move-down-head').removeClass('active');
-					}
-					if(index == 8){
-						$('.i-t-air-1, .i-t-air-2, .i-t-air-3').addClass('flipInY');
-					}
-
-					
-				},
-
-				'navigationTooltips': ['Старт', 'Крепления', 'Подлокотники', 'Защита', 'Аудиосистема', 'Регулировка высоты', 'Регулировка глубины', 'Материалы', 'Выбор цветов', 'История компании', 'Возрастные группы', 'Каталог', 'Контакты'],
-
-			});
-		});
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                'verticalCentered': false,
+                'css3': true,
+                'autoScrolling': false,
+                'fitToSection': false,
+                'navigation': false,
+                'navigationPosition': 'left',
+                'afterLoad': function(anchorLink, index){
+                    if(index == 3){
+                        $('#baby-chair').addClass('active');
+                    }
+                    if(index != 3){
+                        $('#baby-chair').removeClass('active');
+                    }
+                    if(index == 4){
+                        $('#armchair').addClass('active');
+                    }
+                    if(index != 4){
+                        $('#armchair').removeClass('active');
+                    }
+                    if(index == 5){
+                        $('#img-s-s-id').addClass('active');
+                    }
+                    if(index == 5){
+                        $('#img-s-s-id').addClass('fadeInLeft');
+                    }
+                    if(index == 5){
+                        $('.s-3-img').addClass('shake');
+                    }
+                    if(index == 6){
+                        $('.info-r-w-block').addClass('flipInY');
+                    }
+                    if(index != 5){
+                        $('#img-s-s-id').removeClass('active');
+                    }
+                    if(index == 8){
+                        $('.img-s-z').addClass('fadeInUp');
+                    }
+                    if(index == 8){
+                        $('.one-head, .two-head, .three-head').addClass('flipInY');
+                    }
+                    if(index == 7){
+                        $('#move-down-head').addClass('active');
+                    }
+                    if(index == 7){
+                        $('.s-size, .m-size, .l-size').addClass('flipInY');
+                    }
+                    if(index != 7){
+                        $('#move-down-head').removeClass('active');
+                    }
+                    if(index == 9){
+                        $('.i-t-air-1, .i-t-air-2, .i-t-air-3').addClass('flipInY');
+                    }
+                },
+                'navigationTooltips': ['Старт', 'Крепления', 'Подлокотники', 'Защита', 'Аудиосистема', 'Регулировка высоты', 'Регулировка глубины', 'Материалы', 'Выбор цветов', 'История компании', 'Возрастные группы', 'Каталог', 'Контакты'],
+            });
+        });
 	</script>
 	<script>
         
@@ -112,7 +109,6 @@
 <audio loop="" preload="auto" id="baby-music">
 	<source src="files/Buttermilk_Biscuit.ogg" type="audio/ogg; codecs=vorbis">
     <source src="files/Buttermilk_Biscuit.mp3" type="audio/mpeg">
-    
 </audio>
 <div id="fullpage">
 	<div class="section " id="section0">
@@ -164,6 +160,175 @@
 				<div class="a-4">
 					<img src="img/bb.png" alt="">
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" id="section-shares">
+		<div class="wrap">
+			<h2>Новогодние скидки!</h2>
+			<p class="readout">Осталось всего <span>16 дней</span></p>
+			<div class="blocks-list-shares">
+				<div class="block-shares">
+					<div class="white-b-s">
+						<div class="discont-c">- 10%</div>
+						<img src="/product-images/MonzaNova2_Seatfix_XenonBlue.jpg" alt="">
+						<div class="description-block">
+							<h3>Monza Nova 2 Seatfix</h3>
+							<div class="line-d">
+								<div class="name-a1">Вес ребенка:</div>
+								<div class="info-a2">От 15 до 36 кг</div>
+								<div class="name-a1">Возраст:</div>
+								<div class="info-a2">С 3 до 12 лет</div>
+								<div class="name-a1">Цвета</div>
+								<div class="info-a2">
+									<span class="color-c blue-color"></span>
+									<span class="color-c black-color"></span>
+									<span class="color-c gray-color"></span>
+									<span class="color-c light-gray-color"></span>
+									<span class="color-c red-color"></span>
+									<span class="color-c sand-color"></span>
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<div class="line-clear clear">
+								<div class="old-price">
+									<span>19 800 ₽</span>
+								</div>
+								<div class="actual-price">
+									17 820 ₽
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<span class="order-btn btn" data-toggle="modal" data-target="#orderModal" data-h3="Monza Nova 2 Seatfix" data-h5="Группа II/III" data-image="/product-images/MonzaNova2_Seatfix_XenonBlue.jpg" data-firstparam="От 15 до 36 кг" data-secondparam="С 3 до 12 лет"
+							data-price="17 820 ₽">Заказать</span>
+						</div>
+					</div>
+				</div>
+				<div class="block-shares">
+					<div class="white-b-s">
+						<div class="discont-c">- 10%</div>
+						<img src="/product-images/YoungSportHERO-XenonBlue-Inlay1.jpg" alt="">
+						<div class="description-block">
+							<h3>Young Sport Hero</h3>
+							<div class="line-d">
+								<div class="name-a1">Вес ребенка:</div>
+								<div class="info-a2">От 9 до 36 кг</div>
+								<div class="name-a1">Возраст:</div>
+								<div class="info-a2">С 9 мес до 12 лет</div>
+								<div class="name-a1">Цвета</div>
+								<div class="info-a2">
+									<span class="color-c blue-color"></span>
+									<span class="color-c black-color"></span>
+									<span class="color-c gray-color"></span>
+									<span class="color-c light-gray-color"></span>
+									<span class="color-c red-color"></span>
+									<span class="color-c sand-color"></span>
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<div class="line-clear clear">
+								<div class="old-price">
+									<span>21 200 ₽</span>
+								</div>
+								<div class="actual-price">
+									19 080 ₽
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<span class="order-btn btn" data-toggle="modal" data-target="#orderModal" data-h3="Young Sport Hero" data-h5="Группа I/II/III" data-image="/product-images/YoungSportHERO-XenonBlue-Inlay1.jpg" data-firstparam="От 9 до 36 кг" data-secondparam="С 9 мес до 12 лет"
+								  data-price="19 080 ₽">Заказать</span>
+						</div>
+					</div>
+				</div>
+				<div class="block-shares">
+					<div class="white-b-s">
+						<div class="discont-c">- 10%</div>
+						<img src="/product-images/Optiafix_3-4_XenonBlue_cmyk.jpg" alt="">
+						<div class="description-block">
+							<h3>Optiafix</h3>
+							<div class="line-d">
+								<div class="name-a1">Вес ребенка:</div>
+								<div class="info-a2">От 9 до 18 кг</div>
+								<div class="name-a1">Возраст:</div>
+								<div class="info-a2">С 9 мес до 4,5 лет</div>
+								<div class="name-a1">Цвета</div>
+								<div class="info-a2">
+									<span class="color-c blue-color"></span>
+									<span class="color-c black-color"></span>
+									<span class="color-c gray-color"></span>
+									<span class="color-c red-color"></span>
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<div class="line-clear clear">
+								<div class="old-price">
+									<span>21 600 ₽</span>
+								</div>
+								<div class="actual-price">
+									19 440 ₽
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<span class="order-btn btn" data-toggle="modal" data-target="#orderModal" data-h3="Optiafix" data-h5="Группа I" data-image="/product-images/Optiafix_3-4_XenonBlue_cmyk.jpg" data-firstparam="От 9 до 18 кг" data-secondparam="С 9 мес до 4,5 лет"
+								  data-price="19 440 ₽">Заказать</span>
+						</div>
+					</div>
+				</div>
+				<div class="block-shares">
+					<div class="white-b-s">
+						<div class="discont-c">- 10%</div>
+						<img src="/product-images/Guardia_3-4_Dach_V1_cmyk.jpg" alt="">
+						<div class="description-block">
+							<h3>Guardia</h3>
+							<div class="line-d">
+								<div class="name-a1">Вес ребенка:</div>
+								<div class="info-a2">С рождения до 13 кг</div>
+								<div class="name-a1">Возраст:</div>
+								<div class="info-a2">До 15 мес</div>
+								<div class="name-a1">Цвета</div>
+								<div class="info-a2">
+									<span class="color-c blue-color"></span>
+									<span class="color-c black-color"></span>
+									<span class="color-c gray-color"></span>
+									<span class="color-c light-gray-color"></span>
+									<span class="color-c red-color"></span>
+									<span class="color-c sand-color"></span>
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<div class="line-clear clear">
+								<div class="old-price">
+									<span>18 200 ₽</span>
+								</div>
+								<div class="actual-price">
+									16 380 ₽
+								</div>
+							</div>
+						</div>
+						<div class="description-block">
+							<span class="order-btn btn" data-toggle="modal" data-target="#orderModal" data-h3="Guardia" data-h5="Группа 0+" data-image="/product-images/Guardia_3-4_Dach_V1_cmyk.jpg" data-firstparam="С рождения до 13 кг" data-secondparam="До 15 мес"
+								  data-price="16 380 ₽">Заказать</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="free-shipping">
+				<img src="/img/bus.png" alt="">
+				<h3>Бесплатная доставка по Санкт Петербургу!</h3>
+				<p>Доставляем в день заказа.</p>
+				<span>Условия доставки в другие части россии уточняйте по телефону +7 (812) 909-17-03</span>
+			</div>
+			<div class="button-block-three">
+				<a href="" class="btn orange-line-btn" data-toggle="modal" data-target="#contactManager">Задать вопрос менеджеру</a>
+				<a href="#section11" class="btn orang-big-btn">Посмотреть весь каталог</a>
+				<a href="#section1" class="btn orange-line-btn">Особенности кресел recaro</a>
 			</div>
 		</div>
 	</div>
@@ -1078,70 +1243,125 @@
 	</div>
 </div>
 
-<!--modal 1-->
-<div class="modal fade" id="ZERO-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Название модели</h4>
-      </div>
-      <div class="modal-body">
-        <div class="model-block-shop">
-						<h3>ZERO 1</h3>
+
+
+
+<!--modal top1-->
+<div class="modal fade orderModalForm" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Оформление заказа</h4>
+			</div>
+			<form class="productRequestForm" role="form">
+				<div class="modal-body">
+					<div class="model-block-shop">
+						<h3 class="form-name">Monza Nova 2 Seatfix</h3>
 						<div class="left-photo">
-							<div id="carousel-tree" class="carousel " >
+							<div  class="carousel">
 								<div class="carousel-inner">
-							    	<div class="item active">
-							    		<img src="img/catalog-1.jpg" alt="">
-							    	</div>
-							  	</div>
+									<div class="item active">
+										<img class="main_img" src="/product-images/MonzaNova2_Seatfix_XenonBlue.jpg" alt="">
+									</div>
+								</div>
 							</div>
 
 						</div>
 						<div class="right-info">
-							<h5>Группа  0+/I </h5>
+							<h5>Группа II/III</h5>
 							<ul>
-								<li>До 105 cm</li>
-								<li>До 4,5 лет</li>
+								<li class="first_param">До 105 cm</li>
+								<li class="second_param">С 3 до 12 лет</li>
 								<li><br><strong>Колличество</strong></li>
 								<li>
-									<select class="form-control select-count">
-									  <option>1</option>
-									  <option>2</option>
-									  <option>3</option>
-									  <option>4</option>
-									  <option>5</option>
+									<select name="quantity" class="form-control select-count quantityField">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
 									</select>
 								</li>
 							</ul>
-							<div class="price-block">2 000 MD</div>
+							<div class="price-block">17 820 ₽</div>
 						</div>
 					</div>
 					<h3>Оформить заказ</h3>
-					<form role="form">
 						<div class="form-group">
-						    <label for="nameBlock">Имя</label>
-						    <input type="text" class="form-control" id="nameBlock" placeholder="Имя">
-						  </div>
+							<label for="nameBlock">Имя</label>
+							<input type="text" name="name" required="required" class="form-control nameField" id="nameBlock" placeholder="Имя">
+						</div>
 						<div class="form-group">
-						    <label for="emailBlock">E-mail</label>
-						    <input type="email" class="form-control" id="emailBlock" placeholder="Введите email">
-						  </div>
-						  <div class="form-group">
-						    <label for="phoneBlock">Введите телефон</label>
-						    <input type="phone" class="form-control" id="phoneBlock" placeholder="Введите телефон">
-						  </div>
-					</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default default-btn" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-default orange-btn">Отправить заказ</button>
-      </div>
-    </div>
-  </div>
+							<label for="emailBlock">E-mail</label>
+							<input type="email" name="email" required="required" class="form-control emailField" id="emailBlock" placeholder="Введите email">
+						</div>
+						<div class="form-group">
+							<label for="phoneBlock">Введите телефон</label>
+							<input type="text" name="phone" required="required" class="form-control phoneField" id="phoneBlock" placeholder="Введите телефон">
+						</div>
+						<div class="form-group">
+							<label for="addressBlock">Адрес доставки</label>
+							<input type="text" name="address" class="form-control addressField" id="addressBlock" placeholder="Город, улица, номер дома и квартиры">
+						</div>
+				</div>
+				<div class="formResult modal-body row">
+					<div class="col-md-12">
+						<div class="alert resultOk alert-success" style="display: none;" role="alert">Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайщее время.</div>
+						<div class="alert resultFail alert-danger" style="display: none;" role="alert">Что то пошло не так. Повторите попытку позже.</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default default-btn" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-default orange-btn sendRequestButton">Отправить заказ</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
-<!--modal 1-->
+<!--modal top1-->
+
+<!--modal 3-->
+<div class="modal fade" id="contactManager" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form role="form" class="contactManagerForm">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Задать вопрос менеджеру</h4>
+				</div>
+				<div class="modal-body">
+					<h3>Заполните форму</h3>
+					<div class="form-group">
+						<label for="contactName">Имя</label>
+						<input type="text" required="required" class="form-control" id="contactName" name="contactName" placeholder="Имя">
+					</div>
+					<div class="form-group">
+						<label for="contactEmail">E-mail</label>
+						<input type="email" required="required" class="form-control" id="contactEmail" name="contactEmail" placeholder="Введите email">
+					</div>
+					<div class="form-group">
+						<label for="contactText">Напишите вопрос</label>
+						<textarea name="contactText" cols="30" rows="10" class="form-control" id="contactText" placeholder="Текст сообщения"></textarea>
+					</div>
+				</div>
+				<div class="formResult modal-body row">
+					<div class="col-md-12">
+						<div class="alert resultOk alert-success" style="display: none;" role="alert">Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайщее время.</div>
+						<div class="alert resultFail alert-danger" style="display: none;" role="alert">Что то пошло не так. Повторите попытку позже.</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default default-btn" data-dismiss="modal">Закрыть</button>
+					<button type="submit" class="btn btn-default orange-btn sendContactButton">Отправить вопрос</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--modal 3-->
+
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function (d, w, c) {
