@@ -2106,3 +2106,7 @@ body {
 }
 
 /* new slide end */
+
+.switchProductColor:hover {
+    cursor: pointer;
+}

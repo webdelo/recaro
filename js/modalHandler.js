@@ -1,6 +1,6 @@
 $(function(){
 
-    $(document).on('click', '.order-btn', function (){
+    $(document).on('click', '.makeOrderClick', function (){
         var targetModal = $($(this).data('target'));
         targetModal.find('h3.form-name').text($(this).data('h3'));
         targetModal.find('h5').text($(this).data('h5'));
@@ -77,4 +77,11 @@ $(function(){
         });
 
     });
+
+    $('.switchProductColor').click(function () {
+        var image = $(this).data('image');
+        var parent = $(this).closest('.white-b-s').find('img.main-share-image');
+        $(parent).attr('src', image);
+    });
+
 });
