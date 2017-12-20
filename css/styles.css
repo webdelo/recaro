@@ -1695,6 +1695,8 @@ body {
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.12);
 	height: 100%;
 	padding: 15px;
+	position: relative;
+	padding-bottom: 70px;
 }
 
 
@@ -1823,7 +1825,6 @@ body {
 
 .order-btn {
 	border: 1px solid #F68657;
-	width: 100%;
 	font-size: 16px;
 	color: #F68657;
 	text-transform: uppercase;
@@ -1831,6 +1832,10 @@ body {
 	padding-bottom: 15px;
 	margin-bottom: 0;
 	margin-top: 10px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
 }
 
 .discont-c {
