@@ -1978,12 +1978,18 @@ body {
 	display: inline-block;
 }
 
+.dealer-block.second-line-aligned {
+    vertical-align: middle;
+    float: none;
+}
+
 .dealer-block.second-line img {
 	height: 160px;
 }
 
 .dealer-block.second-line img.inherit-height {
 	height: inherit !important;
+    width: 100%;
 }
 
 .dealers-list .second {
