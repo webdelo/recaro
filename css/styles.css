@@ -1982,6 +1982,10 @@ body {
 	height: 160px;
 }
 
+.dealer-block.second-line img.inherit-height {
+	height: inherit !important;
+}
+
 .dealers-list .second {
 	margin-top: 20px;
 	text-align: center;
