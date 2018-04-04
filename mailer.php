@@ -44,6 +44,7 @@ if (isset($_POST['mailType']) && !empty($_POST['mailType'])) {
 
     $mailSubject .= ' ' . '(' . $host . ')';
     #$recipient = $host == 'recaro-cs.ru' ? 'denis.kamenshik@gmail.com' : 'denis.kamenshik@gmail.com';
+    $recipient = array('denis.kamenshik@gmail.com','comanda@ligood.eu');
 
     $transport = new Swift_SendmailTransport('/usr/sbin/sendmail -bs');
     $mailer = new Swift_Mailer($transport);
@@ -51,7 +52,7 @@ if (isset($_POST['mailType']) && !empty($_POST['mailType'])) {
     $message = (new Swift_Message())
         ->setSubject($mailSubject)
         ->setFrom('noreply@'.$host)
-        ->setTo(['denis.kamenshik@gmail.com','comanda@ligood.eu'])
+        ->setTo($recipient)
         ->setPriority(1)
         ->setBody($emailContent, 'text/html');
 
